@@ -1,0 +1,92 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
+/* General styling for the navigation bar */
+nav {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #000000;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+.profile-card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.edit-button:hover {
+    background-color: #777;
+}

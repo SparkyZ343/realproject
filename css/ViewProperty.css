@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.property-details-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #000;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.property-details-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.property-details-container p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.property-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.property-images img {
+    width: calc(33.33% - 10px);
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.property-images img:hover {
+    transform: scale(1.05);
+}
+
+.book-now-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 40px auto 0;
+    width: 50%;
+    text-align: center;
+}
+
+.book-now-btn:hover {
+    background-color: #333;
+}
+
+.property-details-container h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Zoomed Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../css/UserDashboard.css">
+</head>
+<body>
+
+    <!-- User Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>User Dashboard</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="SearchPG.php">Search PG</a></li>
+            <li><a href="MyBookings.php">My Bookings</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-container">
+        <h2>Welcome, User!</h2>
+        <p>Search for accommodations and manage your bookings here.</p>
+
+        <!-- My Profile Button -->
+        <button class="profile-button" onclick="window.location.href='UserProfile.php'">My Profile</button>
+    </section>
+
+</body>
+</html>
