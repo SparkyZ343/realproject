@@ -1,0 +1,137 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+
+nav {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Bookings Container */
+.bookings-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bookings-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+}
+
+thead th {
+    background-color: #333;
+    padding: 12px;
+    color: white;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    .bookings-container {
+        padding: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    tbody td:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        color: #888;
+        content: attr(data-label);
+    }
+}
+
+.cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #cc0000;
+}
+
+
+.reviews-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reviews-button:hover {
+    background-color: #cc0000;
+}

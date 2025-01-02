@@ -1,0 +1,169 @@
+/* MyBookings.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* Light text for contrast */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ffffff; /* White text */
+}
+
+.bookings-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background for booking container */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Each booking card */
+.booking-card {
+    display: flex; /* Flexbox for layout */
+    align-items: flex-start; /* Align items at the top */
+    background-color: #2c2c2c; /* Slightly lighter background for cards */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+}
+
+/* Property image */
+.property-image img {
+    width: 300px; /* Adjust the width of the image */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and details */
+    border: 1px solid #444; /* Subtle border around the image */
+}
+
+/* Property details */
+.property-details {
+    flex-grow: 1; /* Allow the details to grow and take up remaining space */
+}
+
+.property-details h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #ffffff; /* White text for titles */
+}
+
+.property-details p {
+    margin: 8px 0;
+    color: #cccccc; /* Light gray for details */
+    font-size: 1em;
+}
+
+/* Review button styling */
+.review-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #444; /* Match the theme's dark tones */
+    color: #fff; /* White text for contrast */
+    border: 1px solid #555; /* Subtle border for definition */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.review-button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    transform: scale(1.05); /* Subtle scale effect */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .booking-card {
+        flex-direction: column; /* Stack image and details vertically on smaller screens */
+    }
+
+    .property-image img {
+        width: 100%; /* Make image full width on small screens */
+        margin-bottom: 15px; /* Add space below the image */
+    }
+}
+
+/* Cancel Popup Styles */  
+.popup-overlay {  
+    position: fixed;  
+    top: 200px;  
+    left: 400px;  
+    width: 100%;  
+    height: 100%;  
+    /* background: rgba(0, 0, 0, 0.7);   */
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    z-index: 1000;  
+}  
+
+.popup-content {  
+    background: #000000;  
+    padding: 20px;  
+    border-radius: 8px;  
+    text-align: center;  
+    max-width: 400px;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  
+}  
+
+.popup-content h2 {  
+    margin-bottom: 15px;  
+}  
+
+.refund-note {  
+    color: red;  
+    font-size: 0.9em;  
+    margin-bottom: 20px;  
+}  
+
+.popup-buttons {  
+    display: flex;  
+    justify-content: space-between;  
+    gap: 10px;  
+}  
+
+.popup-confirm {  
+    background: #d9534f;  
+    color: #fff;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+}  
+
+.popup-cancel {  
+    background: #5bc0de;  
+    color: #fff;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+}  
+
+.popup-confirm:hover, .popup-cancel:hover {  
+    opacity: 0.9;  
+}  
+
+.cancel-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #444; /* Match the theme's dark tones */
+    color: #fff; /* White text for contrast */
+    border: 1px solid #555; /* Subtle border for definition */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cancel-button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    transform: scale(1.05); /* Subtle scale effect */
+}

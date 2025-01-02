@@ -1,0 +1,90 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav .nav-links li {
+    display: inline;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .nav-links a:hover {
+    background-color: #575757;
+}
+
+/* Reviews Section */
+.reviews-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.review-card h3 {
+    margin: 0 0 10px;
+}
+
+.review-card .rating {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-card .review-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review-card .review-date {
+    font-size: 0.9em;
+    color: #555;
+    text-align: right;
+}

@@ -1,0 +1,118 @@
+/* General styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+
+nav {
+    background-color: #111;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Edit Profile Container Styling */
+.edit-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Edit Profile Card */
+.edit-profile-card {
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.edit-profile-card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Input Styles */
+.edit-profile-card label {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.edit-profile-card input[type="text"],
+.edit-profile-card input[type="email"],
+.edit-profile-card input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.edit-profile-card input[type="text"]:focus,
+.edit-profile-card input[type="email"]:focus,
+.edit-profile-card input[type="password"]:focus {
+    border-color: #888;
+    outline: none;
+}
+
+/* Submit Button */
+.edit-profile-card button.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-card button.submit-button:hover {
+    background-color: #777;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    .edit-profile-card {
+        padding: 20px;
+        width: 90%;
+    }
+
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}

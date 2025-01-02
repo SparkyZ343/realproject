@@ -1,0 +1,174 @@
+/* Owner View Properties CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff; /* White text */
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #000000;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+nav .logo {
+    display: none; /* Hide the logo as we're focusing on the navigation links */
+}
+
+nav .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav .nav-links a:hover {
+    color: #b0b0b0;
+}
+
+.dashboard-container {
+    width: 85%;
+    margin: 40px auto;
+    background-color: #1e1e1e; /* Darker background */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #2c2c2c; /* Slightly lighter background for table */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Dark border for table rows */
+}
+
+table th {
+    background-color: #333; /* Dark background for header */
+    color: #f0f0f0;
+    font-size: 1.2em;
+}
+
+table td {
+    color: #cccccc;
+}
+
+table tr:hover {
+    background-color: #444; /* Hover effect for rows */
+}
+
+table td img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+table td a {
+    color: #44aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Edit Property Form */
+.edit-form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit-form-container h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.edit-form-container label {
+    color: #cccccc;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.edit-form-container input,
+.edit-form-container textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.edit-form-container button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.edit-form-container button:hover {
+    background-color: #0059b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    .edit-form-container {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: flex-end; /* Stack the links vertically on smaller screens */
+    }
+
+    nav .nav-links li {
+        margin-bottom: 10px;
+    }
+}
